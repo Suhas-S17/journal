@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="30" cy="30" r="25" fill="url(#logoGradient)" />
+  
+  <!-- Letter V in the circle -->
+  <text x="30" y="38" font-family="serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">V</text>
+  
+  <!-- Journal Name -->
+  <text x="65" y="22" font-family="serif" font-size="16" font-weight="bold" fill="#333">Vivtih Journal</text>
+  <text x="65" y="36" font-family="sans-serif" font-size="9" fill="#666">Food Science &amp;</text>
+  <text x="65" y="46" font-family="sans-serif" font-size="9" fill="#666">Clinical Nutrition</text>
+</svg>

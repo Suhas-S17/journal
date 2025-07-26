@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Vivtih Journal">
+    <meta name="theme-color" content="#007bff">
+    <meta name="format-detection" content="telephone=no">
+    <title>Archives - Vivtih Journal of Food Science and Clinical Nutrition</title>
+    <meta name="description" content="Browse the complete archives of the Vivtih Journal. Search past issues and access research articles in food science and clinical nutrition.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <a href="index.html">
+                        <img src="assets/vivtih-logo.svg" alt="Vivtih Journal Logo" class="logo">
+                    </a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="current-issue.html" class="nav-link">Current Issue</a>
+                    <a href="archives.html" class="nav-link active">Archives</a>
+                    <a href="submissions.html" class="nav-link">Submissions</a>
+                    <a href="editorial-team.html" class="nav-link">Editorial Team</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Journal Archives</h1>
+            <p>Browse all published issues of Vivtih Journal</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="content-left">
+                    <!-- Search and Filter -->
+                    <section class="section">
+                        <div class="search-filter-section">
+                            <div class="search-bar">
+                                <input type="search" id="archive-search" placeholder="Search articles, authors, or keywords..." class="search-input">
+                                <button type="button" class="search-btn" onclick="searchArchive()">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="filter-options">
+                                <select id="year-filter" class="filter-select">
+                                    <option value="">All Years</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                                <select id="type-filter" class="filter-select">
+                                    <option value="">All Article Types</option>
+                                    <option value="research">Research Articles</option>
+                                    <option value="review">Book Reviews</option>
+                                    <option value="commentary">Commentary</option>
+                                    <option value="editorial">Editorial</option>
+                                </select>
+                                <button type="button" class="btn btn-outline" onclick="resetFilters()">Reset Filters</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Archive Browse -->
+                    <section class="section">
+                        <h2>Browse by Year</h2>
+                        
+                        <!-- 2025 Issues -->
+                        <div class="year-section">
+                            <h3 class="year-header">
+                                <i class="fas fa-calendar-alt"></i>
+                                2025
+                                <span class="year-stats">(1 Issue, 8 Articles)</span>
+                            </h3>
+                            
+                            <div class="issues-grid">
+                                <div class="issue-card current-issue">
+                                    <div class="issue-cover">
+                                        <div class="cover-placeholder">
+                                            <i class="fas fa-book"></i>
+                                            <h4>Vol. 2, No. 1</h4>
+                                            <p>2025</p>
+                                        </div>
+                                        <div class="current-badge">Current Issue</div>
+                                    </div>
+                                    <div class="issue-content">
+                                        <h4>Volume 2, Issue 1</h4>
+                                        <p class="issue-date">Published: March 15, 2025</p>
+                                        <p class="issue-theme">Special Theme: Austrian Economics and Modern Applications</p>
+                                        <p class="issue-summary">This issue explores the contemporary relevance of Austrian economic principles, featuring student research on market processes, entrepreneurship, and monetary theory.</p>
+                                        <div class="issue-metrics">
+                                            <span class="metric"><i class="fas fa-file-alt"></i> 8 Articles</span>
+                                            <span class="metric"><i class="fas fa-download"></i> 1,247 Downloads</span>
+                                        </div>
+                                        <div class="issue-actions">
+                                            <a href="current-issue.html" class="btn btn-primary">View Issue</a>
+                                            <a href="#" class="btn btn-outline">Download PDF</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 2024 Issues -->
+                        <div class="year-section">
+                            <h3 class="year-header">
+                                <i class="fas fa-calendar-alt"></i>
+                                2024
+                                <span class="year-stats">(2 Issues, 14 Articles)</span>
+                            </h3>
+                            
+                            <div class="issues-grid">
+                                <!-- Volume 1, Issue 2 -->
+                                <div class="issue-card">
+                                    <div class="issue-cover">
+                                        <div class="cover-placeholder">
+                                            <i class="fas fa-book"></i>
+                                            <h4>Vol. 1, No. 2</h4>
+                                            <p>2024</p>
+                                        </div>
+                                    </div>
+                                    <div class="issue-content">
+                                        <h4>Volume 1, Issue 2</h4>
+                                        <p class="issue-date">Published: September 20, 2024</p>
+                                        <p class="issue-theme">Special Theme: Methodology and Praxeology</p>
+                                        <p class="issue-summary">Focusing on methodological foundations of Austrian economics, this issue examines praxeological approaches to economic understanding and their applications in contemporary research.</p>
+                                        <div class="issue-metrics">
+                                            <span class="metric"><i class="fas fa-file-alt"></i> 6 Articles</span>
+                                            <span class="metric"><i class="fas fa-download"></i> 892 Downloads</span>
+                                        </div>
+                                        <div class="issue-actions">
+                                            <a href="#" class="btn btn-primary">View Issue</a>
+                                            <a href="#" class="btn btn-outline">Download PDF</a>
+                                        </div>
+
+                                        <!-- Table of Contents -->
+                                        <div class="issue-toc">
+                                            <h5>Contents:</h5>
+                                            <ul>
+                                                <li>
+                                                    <span class="article-title">Praxeology and Modern Economic Analysis</span>
+                                                    <span class="article-author">James Wilson (LSE)</span>
+                                                </li>
+                                                <li>
+                                                    <span class="article-title">Methodological Individualism in Digital Markets</span>
+                                                    <span class="article-author">Lisa Chen (Harvard)</span>
+                                                </li>
+                                                <li>
+                                                    <span class="article-title">Austrian Methodology vs. Mainstream Economics</span>
+                                                    <span class="article-author">Thomas Anderson (Yale)</span>
+                                                </li>
+                                                <li>
+                                                    <span class="article-title">Book Review: Human Action in the Digital Age</span>
+                                                    <span class="article-author">Maria Gonzalez (Georgetown)</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Volume 1, Issue 1 -->
+                                <div class="issue-card inaugural-issue">
+                                    <div class="issue-cover">
+                                        <div class="cover-placeholder">
+                                            <i class="fas fa-book"></i>
+                                            <h4>Vol. 1, No. 1</h4>
+                                            <p>2024</p>
+                                        </div>
+                                        <div class="inaugural-badge">Inaugural Issue</div>
+                                    </div>
+                                    <div class="issue-content">
+                                        <h4>Volume 1, Issue 1</h4>
+                                        <p class="issue-date">Published: March 15, 2024</p>
+                                        <p class="issue-theme">Inaugural Issue: Foundations of Nutritional Science</p>
+                                        <p class="issue-summary">The inaugural issue of Vivtih Journal, featuring foundational articles in food science and clinical nutrition and establishing the journal's mission to promote research in nutritional sciences.</p>
+                                        <div class="issue-metrics">
+                                            <span class="metric"><i class="fas fa-file-alt"></i> 8 Articles</span>
+                                            <span class="metric"><i class="fas fa-download"></i> 2,134 Downloads</span>
+                                        </div>
+                                        <div class="issue-actions">
+                                            <a href="#" class="btn btn-primary">View Issue</a>
+                                            <a href="#" class="btn btn-outline">Download PDF</a>
+                                        </div>
+
+                                        <!-- Table of Contents -->
+                                        <div class="issue-toc">
+                                            <h5>Contents:</h5>
+                                            <ul>
+                                                <li>
+                                                    <span class="article-title">Welcome to the Vivtih Journal: A New Voice in Nutrition Research</span>
+                                                    <span class="article-author">Editorial Team</span>
+                                                </li>
+                                                <li>
+                                                    <span class="article-title">Carl Menger and the Origins of Austrian Economics</span>
+                                                    <span class="article-author">Rachel Kim (Stanford)</span>
+                                                </li>
+                                                <li>
+                                                    <span class="article-title">Böhm-Bawerk's Capital Theory Revisited</span>
+                                                    <span class="article-author">Alexander Smith (Chicago)</span>
+                                                </li>
+                                                <li>
+                                                    <span class="article-title">Mises and the Socialist Calculation Debate</span>
+                                                    <span class="article-author">Jennifer Brown (GMU)</span>
+                                                </li>
+                                                <li>
+                                                    <span class="article-title">Hayek's Knowledge Problem in Information Theory</span>
+                                                    <span class="article-author">Kevin O'Connor (Notre Dame)</span>
+                                                </li>
+                                                <li>
+                                                    <span class="article-title">Book Review: The Austrian School's Impact</span>
+                                                    <span class="article-author">Sophie Taylor (Princeton)</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Most Cited Articles -->
+                    <section class="section">
+                        <h2>Most Cited Articles</h2>
+                        <div class="cited-articles">
+                            <div class="cited-article">
+                                <div class="citation-count">15</div>
+                                <div class="article-info">
+                                    <h4>Carl Menger and the Origins of Austrian Economics</h4>
+                                    <p class="article-meta">Rachel Kim (Stanford) • Vol. 1, No. 1 (2024)</p>
+                                    <p class="article-excerpt">A comprehensive analysis of Menger's Principles of Economics and its foundational role in establishing the Austrian School...</p>
+                                </div>
+                                <div class="article-actions">
+                                    <a href="#" class="btn btn-sm btn-outline">View Article</a>
+                                </div>
+                            </div>
+
+                            <div class="cited-article">
+                                <div class="citation-count">12</div>
+                                <div class="article-info">
+                                    <h4>Market Process Theory and Cryptocurrency Markets</h4>
+                                    <p class="article-meta">Sarah Johnson (University of Chicago) • Vol. 2, No. 1 (2025)</p>
+                                    <p class="article-excerpt">Examining spontaneous order in cryptocurrency markets through Hayekian market process theory...</p>
+                                </div>
+                                <div class="article-actions">
+                                    <a href="#" class="btn btn-sm btn-outline">View Article</a>
+                                </div>
+                            </div>
+
+                            <div class="cited-article">
+                                <div class="citation-count">10</div>
+                                <div class="article-info">
+                                    <h4>Mises and the Socialist Calculation Debate</h4>
+                                    <p class="article-meta">Jennifer Brown (George Mason University) • Vol. 1, No. 1 (2024)</p>
+                                    <p class="article-excerpt">A modern reassessment of Mises' contribution to the socialist calculation debate and its contemporary relevance...</p>
+                                </div>
+                                <div class="article-actions">
+                                    <a href="#" class="btn btn-sm btn-outline">View Article</a>
+                                </div>
+                            </div>
+
+                            <div class="cited-article">
+                                <div class="citation-count">8</div>
+                                <div class="article-info">
+                                    <h4>Praxeology and Modern Economic Analysis</h4>
+                                    <p class="article-meta">James Wilson (London School of Economics) • Vol. 1, No. 2 (2024)</p>
+                                    <p class="article-excerpt">Exploring the methodological foundations of Austrian economics and their application to contemporary economic problems...</p>
+                                </div>
+                                <div class="article-actions">
+                                    <a href="#" class="btn btn-sm btn-outline">View Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <h3>Archive Statistics</h3>
+                        <div class="archive-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Total Issues</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">22</span>
+                                <span class="stat-label">Published Articles</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">4,273</span>
+                                <span class="stat-label">Total Downloads</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">67</span>
+                                <span class="stat-label">Total Citations</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Browse by Topic</h3>
+                        <div class="topic-tags">
+                            <a href="#" class="topic-tag">Austrian Economics</a>
+                            <a href="#" class="topic-tag">Market Process</a>
+                            <a href="#" class="topic-tag">Entrepreneurship</a>
+                            <a href="#" class="topic-tag">Monetary Theory</a>
+                            <a href="#" class="topic-tag">Capital Theory</a>
+                            <a href="#" class="topic-tag">Praxeology</a>
+                            <a href="#" class="topic-tag">Business Cycles</a>
+                            <a href="#" class="topic-tag">Economic Methodology</a>
+                            <a href="#" class="topic-tag">History of Thought</a>
+                            <a href="#" class="topic-tag">Carl Menger</a>
+                            <a href="#" class="topic-tag">Ludwig von Mises</a>
+                            <a href="#" class="topic-tag">Friedrich Hayek</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Browse by Author</h3>
+                        <div class="author-index">
+                            <div class="author-letter">
+                                <h4>A-C</h4>
+                                <a href="#" class="author-link">Anderson, Thomas</a>
+                                <a href="#" class="author-link">Brown, Jennifer</a>
+                                <a href="#" class="author-link">Chen, Lisa</a>
+                                <a href="#" class="author-link">Chen, Michael</a>
+                            </div>
+                            <div class="author-letter">
+                                <h4>D-K</h4>
+                                <a href="#" class="author-link">Gonzalez, Maria</a>
+                                <a href="#" class="author-link">Johnson, Sarah</a>
+                                <a href="#" class="author-link">Kim, Rachel</a>
+                            </div>
+                            <div class="author-letter">
+                                <h4>L-R</h4>
+                                <a href="#" class="author-link">Martinez, Robert</a>
+                                <a href="#" class="author-link">O'Connor, Kevin</a>
+                                <a href="#" class="author-link">Rodriguez, Emily</a>
+                            </div>
+                            <div class="author-letter">
+                                <h4>S-Z</h4>
+                                <a href="#" class="author-link">Smith, Alexander</a>
+                                <a href="#" class="author-link">Taylor, Sophie</a>
+                                <a href="#" class="author-link">Thompson, David</a>
+                                <a href="#" class="author-link">Wang, Jessica</a>
+                                <a href="#" class="author-link">Wilson, James</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>RSS Feeds</h3>
+                        <div class="rss-feeds">
+                            <a href="#" class="rss-link">
+                                <i class="fas fa-rss"></i>
+                                <span>Latest Articles</span>
+                            </a>
+                            <a href="#" class="rss-link">
+                                <i class="fas fa-rss"></i>
+                                <span>New Issues</span>
+                            </a>
+                            <a href="#" class="rss-link">
+                                <i class="fas fa-rss"></i>
+                                <span>All Content</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Advanced Search</h3>
+                        <div class="advanced-search">
+                            <p>For more detailed search options:</p>
+                            <a href="#" class="btn btn-outline btn-block">Advanced Search</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Export Options</h3>
+                        <div class="export-options">
+                            <a href="#" class="export-link">
+                                <i class="fas fa-download"></i>
+                                <span>Export Citations (BibTeX)</span>
+                            </a>
+                            <a href="#" class="export-link">
+                                <i class="fas fa-download"></i>
+                                <span>Export Citations (RIS)</span>
+                            </a>
+                            <a href="#" class="export-link">
+                                <i class="fas fa-download"></i>
+                                <span>Export Citations (EndNote)</span>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Vivtih Journal</h4>
+                    <p>An open access, peer-reviewed journal for student research in food science and clinical nutrition.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="current-issue.html">Current Issue</a></li>
+                        <li><a href="archives.html">Archives</a></li>
+                        <li><a href="submissions.html">Submissions</a></li>
+                        <li><a href="editorial-team.html">Editorial Team</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://twitter.com/@VivtihJournal" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vivtih Journal of Food Science and Clinical Nutrition. All rights reserved.</p>
+                <p>OJS Hosting, Support, and Customization by: <a href="https://openjournalsystems.com/ojs-hosting" target="_blank">OpenJournalSystems.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

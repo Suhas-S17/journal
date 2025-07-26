@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mainLogoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Circle -->
+  <circle cx="75" cy="75" r="70" fill="url(#mainLogoGradient)" stroke="#fff" stroke-width="5"/>
+  
+  <!-- Inner Design -->
+  <circle cx="75" cy="75" r="50" fill="none" stroke="white" stroke-width="2" opacity="0.3"/>
+  <circle cx="75" cy="75" r="30" fill="none" stroke="white" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Letter V -->
+  <text x="75" y="95" font-family="serif" font-size="48" font-weight="bold" text-anchor="middle" fill="white">V</text>
+  
+  <!-- Decorative elements -->
+  <path d="M 35 75 Q 75 35 115 75 Q 75 115 35 75" fill="none" stroke="white" stroke-width="1" opacity="0.4"/>
+</svg>
