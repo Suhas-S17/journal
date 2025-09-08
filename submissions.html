@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <meta name="apple-mobile-web-app-title" content="Vivtih Journal">
-    <meta name="theme-color" content="#007bff">
-    <meta name="format-detection" content="telephone=no">
-    <title>Submissions - Vivtih Journal of Food Science and Clinical Nutrition</title>
-    <meta name="description" content="Submit your research to the Vivtih Journal. Guidelines for authors, submission process, and review procedures for food science and clinical nutrition research.">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Author's Instructions - Vivrtih Journal of Food Science and Clinical Nutrition</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <!-- Header -->
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="max-w-7xl mx-auto px-4 py-8 lg:flex gap-6">
+
+	  <!-- Header -->
     <header class="header">
         <div class="container">
             <nav class="navbar">
                 <div class="nav-brand">
                     <a href="index.html">
-                        <img src="assets/vivtih-logo.svg" alt="Vivtih Journal Logo" class="logo">
+                        <img src="assets/Vivrtih-logo.svg" alt="Vivrtih Journal Logo" class="logo">
                     </a>
                 </div>
                 <div class="nav-toggle" id="nav-toggle">
@@ -34,12 +26,12 @@
                 </div>
                 <div class="nav-menu" id="nav-menu">
                     <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About</a>
+                    <a href="about.html" class="nav-link active">About</a>
                     <a href="current-issue.html" class="nav-link">Current Issue</a>
                     <a href="archives.html" class="nav-link">Archives</a>
-                    <a href="submissions.html" class="nav-link active">Submissions</a>
-                    <a href="editorial-team.html" class="nav-link">Editorial Team</a>
-                    <a href="contact.html" class="nav-link">Contact</a>
+                    <a href="submissions.html" class="nav-link">Submissions</a>
+                    <a href="editorial-policy-board.html" class="nav-link">Editorial Team</a>
+                    <a href="contact-us.html" class="nav-link">Contact</a>
                 </div>
             </nav>
         </div>
@@ -48,257 +40,375 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Submission Guidelines</h1>
-            <p>Guidelines for authors submitting to the Vivtih Journal</p>
+            <h1>Vivrtih Journal of Food Science and Clinical Nutrition</h1>
+            <p>An International, open-access, peer-reviewed journal</p>
         </div>
     </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <div class="container">
-            <div class="content-grid">
-                <div class="content-left">
-                    <section class="section">
-                        <h2>Eligibility Requirements</h2>
-                        <div class="card">
-                            <p><strong>Who can submit:</strong></p>
-                            <ul>
-                                <li>Current undergraduate students at any accredited institution</li>
-                                <li>Students who have graduated within the past two years (early graduate students qualify)</li>
-                                <li>Co-authored papers are welcome if the primary author meets eligibility requirements</li>
-                            </ul>
-                            
-                            <p><strong>Subject Areas:</strong></p>
-                            <ul>
-                                <li>Food Science</li>
-                                <li>Clinical Nutrition</li>
-                                <li>Nutritional Biochemistry</li>
-                                <li>Public Health Nutrition</li>
-                                <li>Food Technology</li>
-                                <li>Dietetics</li>
-                                <li>Sports Nutrition</li>
-                            </ul>
-                        </div>
-                    </section>
+    <!-- Main content -->
+    <main class="flex-1">
+      <h1 class="text-3xl font-bold mb-6">Author's Instructions</h1>
 
-                    <section class="section">
-                        <h2>Manuscript Types</h2>
-                        <div class="card">
-                            <h3>Research Articles</h3>
-                            <p><strong>Length:</strong> 4,000-8,000 words (including references)</p>
-                            <p><strong>Description:</strong> Original research papers presenting new insights, interpretations, or analyses in food science, clinical nutrition, or related methodology.</p>
-                            
-                            <h3>Book Reviews</h3>
-                            <p><strong>Length:</strong> 1,000-2,000 words</p>
-                            <p><strong>Description:</strong> Critical reviews of recent academic books in HET and related fields. Books should be published within the last 3 years.</p>
-                            
-                            <h3>Review Essays</h3>
-                            <p><strong>Length:</strong> 2,000-4,000 words</p>
-                            <p><strong>Description:</strong> Synthetic essays reviewing multiple books or examining themes across several works.</p>
-                            
-                            <h3>Research Notes</h3>
-                            <p><strong>Length:</strong> 1,000-3,000 words</p>
-                            <p><strong>Description:</strong> Brief communications reporting preliminary findings, methodological innovations, or responses to published articles.</p>
-                        </div>
-                    </section>
+      <div class="space-y-4">
+		 
+        <!-- Authorship and Contributions -->
+        <details class="bg-white border rounded-lg p-4">
+          <summary class="cursor-pointer font-semibold text-lg">Authorship and Contributions</summary>
+          <p class="mt-2 whitespace-pre-line">
+Authors must meet the following criteria:
+<li>Contributed substantially to the represented work in terms of conceptual design or analysis, writing of the article, and final approval.</li>
+<li> Accountability for all aspects of the work, ensuring integrity and accuracy.</li>
+          </p>
+        </details>
 
-                    <section class="section">
-                        <h2>Formatting Guidelines</h2>
-                        <div class="card">
-                            <h3>General Format</h3>
-                            <ul>
-                                <li><strong>Font:</strong> Times New Roman, 12pt</li>
-                                <li><strong>Spacing:</strong> Double-spaced throughout</li>
-                                <li><strong>Margins:</strong> 1 inch on all sides</li>
-                                <li><strong>Page numbers:</strong> Bottom center</li>
-                                <li><strong>File format:</strong> Microsoft Word (.docx) or PDF</li>
-                            </ul>
+        <!-- Author’s Responsibilities -->
+        <details class="bg-white border rounded-lg p-4">
+          <summary class="cursor-pointer font-semibold text-lg">Author’s Responsibilities</summary>
+          <p class="mt-2 whitespace-pre-line">
+Authors are responsible for ensuring that the content they submit does not infringe upon any third-party intellectual property rights, including copyright, trademarks, and patents. Authors must verify that they have the necessary permissions for all copyrighted materials (e.g., figures, tables, images) included in their submission. VJFSCN may request proof of such permissions before publication.
+Manuscripts requiring revision should address all reviewer comments comprehensively. Authors must adhere to the guidelines for resubmission to avoid delays or rejection.
+          </p>
+        </details>
 
-                            <h3>Title Page</h3>
-                            <p>Include the following on a separate title page:</p>
-                            <ul>
-                                <li>Article title</li>
-                                <li>Author name(s) and affiliation(s)</li>
-                                <li>Contact information (email address)</li>
-                                <li>Word count</li>
-                                <li>Abstract (150-250 words)</li>
-                                <li>Keywords (3-6 terms)</li>
-                            </ul>
+        <!-- Plagiarism Policy -->
+        <details class="bg-white border rounded-lg p-4">
+          <summary class="cursor-pointer font-semibold text-lg">Plagiarism Policy</summary>
+          <p class="mt-2 whitespace-pre-line">
+We are committed to publishing original work and use plagiarism detection software to screen all submissions. Manuscripts with significant overlap will be rejected.
+          </p>
+        </details>
+		  
+ <!-- Author Guidelines -->
+        <details class="bg-white border rounded-lg p-4">
+          <summary class="cursor-pointer font-semibold text-lg">Author Guidelines</summary>
+          <p class="mt-2 whitespace-pre-line">
+All manuscripts must be submitted online through the website [ to be created]. Authors do not have to pay for the submission of articles. If you experience any problems, please submit through the editorial office by e-mail at [to be created]. Authors will receive an acknowledgement of submission.
+The submitted manuscripts that are not as per the “Instructions to Authors” would be returned to the authors for technical correction before they undergo editorial/peer review. The manuscript should be submitted in the form of separate documents, using the doc/docx format only.
+          </p>
+        </details>
 
-                            <h3>Citations and References</h3>
-                            <p><strong>Style:</strong> Chicago Manual of Style (Notes and Bibliography system)</p>
-                            <p><strong>Examples:</strong></p>
-                            <div class="citation-examples">
-                                <p><em>Book:</em> Adam Smith, <em>An Inquiry into the Nature and Causes of the Wealth of Nations</em> (London: W. Strahan and T. Cadell, 1776), 23.</p>
-                                <p><em>Journal Article:</em> Mark Blaug, "The Methodology of Economics: Or How Economists Explain," <em>Cambridge Journal of Economics</em> 4, no. 2 (1980): 137-160.</p>
-                                <p><em>Chapter:</em> Joseph Schumpeter, "The Creative Response in Economic History," in <em>Essays on Economic Topics</em>, ed. Richard V. Clemence (Port Washington: Kennikat Press, 1951), 216-226.</p>
-                            </div>
-                        </div>
-                    </section>
+                <!-- Cover Letter Guidelines -->
+        <details class="bg-white border rounded-lg p-4">
+          <summary class="cursor-pointer font-semibold text-lg">Cover Letter Guidelines</summary>
+          <p class="mt-2 whitespace-pre-line">
+The cover letter must include the following and be signed at the end:
+	<li> Manuscript Type and Title: Specify the type of the article, the full title, and the names of all authors along with their designations, and institutional affiliations (department(s) and/or institution(s) to which the work should be credited). Indicate the corresponding author with an asterisk (*).</li>
+<li> Research Area: Describe how the manuscript aligns with the journal’s scope, particularly in relation to the specific research field or topic.</li>
+<li> Authorship Declaration: Confirm that all authors have read and approved the manuscript, meet the journal’s authorship criteria, and affirm that the work represents honest and original research.</li>
+<li> Copyright Transfer Statement: Authors must include the following declaration in the cover letter:</li>
+<p>“We understand and agree that, upon acceptance, the copyright of this manuscript will be transferred to Vivrtih Journal of Food Science and Clinical Nutrition. This transfer includes the right to publish, distribute, and archive the work in any format. At the same time, authors retain the right to use their work for academic and non-commercial purposes with proper citation.”</p>
+<li> Corresponding Author Details: Provide the full name, postal address, email, and phone number.</li>
+          </p>
+        </details>
 
-                    <section class="section">
-                        <h2>Submission Process</h2>
-                        <div class="card">
-                            <div class="submission-steps">
-                                <div class="step">
-                                    <div class="step-number">1</div>
-                                    <div class="step-content">
-                                        <h4>Prepare Your Manuscript</h4>
-                                        <p>Ensure your manuscript follows all formatting guidelines and includes all required elements.</p>
-                                    </div>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">2</div>
-                                    <div class="step-content">
-                                        <h4>Create an Account</h4>
-                                        <p>Register for an account on our submission system (if you haven't already).</p>
-                                    </div>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">3</div>
-                                    <div class="step-content">
-                                        <h4>Submit Online</h4>
-                                        <p>Use our online submission system to upload your manuscript and complete the submission form.</p>
-                                    </div>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">4</div>
-                                    <div class="step-content">
-                                        <h4>Editorial Review</h4>
-                                        <p>Your submission will be reviewed by our editorial team for initial screening.</p>
-                                    </div>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">5</div>
-                                    <div class="step-content">
-                                        <h4>Peer Review</h4>
-                                        <p>If accepted for review, your manuscript will undergo double-blind peer review.</p>
-                                    </div>
-                                </div>
-                                <div class="step">
-                                    <div class="step-number">6</div>
-                                    <div class="step-content">
-                                        <h4>Decision</h4>
-                                        <p>You will receive a decision with reviewer comments and revision guidance if applicable.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="submission-button">
-                                <a href="#" class="btn btn-primary btn-large">Start Your Submission</a>
-                            </div>
-                        </div>
-                    </section>
+        <!-- Manuscript Specifications -->
+        <details class="bg-white border rounded-lg p-4">
+          <summary class="cursor-pointer font-semibold text-lg">Manuscript Specifications</summary>
+          <p class="mt-2 whitespace-pre-line">
+<li> Word Count: Total number of words, excluding tables, figures, and references.</li>
+<li> Number of References: Total count of citations included.</li>
+<li> Number of Tables and Figures: Specify the number of tables and figures in the manuscript.</li>
+<p>Authors are requested to suggest 4–5 potential peer reviewers, including each reviewer’s name, institutional affiliation, email address, and relevant area of expertise.</p>
+          </p>
+        </details>
 
-                    <section class="section">
-                        <h2>Review Process Timeline</h2>
-                        <div class="card">
-                            <ul>
-                                <li><strong>Initial Editorial Review:</strong> 2-3 weeks</li>
-                                <li><strong>Peer Review:</strong> 6-8 weeks</li>
-                                <li><strong>Author Revisions:</strong> 4-6 weeks (if required)</li>
-                                <li><strong>Final Decision:</strong> 1-2 weeks after revision submission</li>
-                                <li><strong>Publication:</strong> Within 3 months of acceptance</li>
-                            </ul>
-                            
-                            <p><em>Note: These timelines are estimates and may vary depending on reviewer availability and manuscript complexity.</em></p>
-                        </div>
-                    </section>
+        <details class="bg-white border rounded-lg p-4 mt-4">
+  <summary class="cursor-pointer font-semibold text-lg">Manuscript Types</summary>
+  <div class="mt-2 whitespace-pre-line">
+    
+    <p><strong>Original Article:</strong> Present original research findings based on empirical data. These manuscripts should include a comprehensive analysis of a clearly defined research question or hypothesis, along with detailed methodology, results, and a discussion that contextualises the findings within the existing literature. Original Articles are expected to follow a structured format, including an Abstract, Introduction, Materials and Methods, Results, Discussion, Conclusion, and References. The maximum word count is 6,000 words, with up to 50 references and a combined total of 8 tables and figures.</p>
 
-                    <section class="section">
-                        <h2>Publication Ethics</h2>
-                        <div class="card">
-                            <h3>Plagiarism Policy</h3>
-                            <p>All submissions are checked for plagiarism using professional software. Any evidence of plagiarism will result in immediate rejection.</p>
-                            
-                            <h3>Originality</h3>
-                            <p>Manuscripts must be original work that has not been published elsewhere or submitted simultaneously to other journals.</p>
-                            
-                            <h3>Authorship</h3>
-                            <p>All listed authors must have made substantial contributions to the work. Changes to authorship after submission require approval from all authors.</p>
-                            
-                            <h3>Conflicts of Interest</h3>
-                            <p>Authors must disclose any potential conflicts of interest, including financial relationships that might bias their work.</p>
-                        </div>
-                    </section>
-                </div>
+    <p><strong>Review Article:</strong> Provide a critical and comprehensive synthesis of the existing literature on a specific topic within the journal’s scope. These articles do not present new experimental data but rather analyse and interpret findings from multiple studies to summarise the current state of knowledge, highlight key themes, identify gaps, and propose future research directions. Review Articles should include an Abstract, Introduction, Main Text (organised into sub-sections), and a Conclusion. Submissions may contain up to 8,000 words, 100 references, and a maximum of 8 tables and figures combined.</p>
 
-                <!-- Sidebar -->
-                <aside class="sidebar">
-                    <div class="sidebar-section">
-                        <h3>Submission Deadlines</h3>
-                        <div class="deadlines">
-                            <div class="deadline">
-                                <strong>Next Issue:</strong><br>
-                                Volume 2, Issue 1<br>
-                                <em>Deadline: December 31, 2025</em>
-                            </div>
-                        </div>
-                    </div>
+    <p><strong>Mini Reviews:</strong> Concise articles that focus on recent developments or emerging trends within a narrowly defined area of research. Unlike full-length reviews, Mini Reviews provide a snapshot of current knowledge, making them ideal for covering niche topics or rapidly evolving fields. Authors should aim to clearly synthesise key findings, offer critical insights, and identify areas for future inquiry. Mini Reviews typically range from 2,000 to 3,000 words, with a recommended reference limit of 40 and up to 4 tables or figures combined.</p>
 
-                    <div class="sidebar-section">
-                        <h3>Quick Links</h3>
-                        <div class="important-links">
-                            <a href="style-guide.html" class="important-link">Style Guide</a>
-                            <a href="contact.html" class="important-link">Contact Editors</a>
-                        </div>
-                    </div>
+    <p><strong>Short Reports:</strong> Brief yet impactful manuscripts that describe original research findings. These submissions are appropriate for studies that offer novel insights but may not require a full-length article. Short Reports should be focused, with clear objectives, concise results, and well-articulated implications. A standard format including an Abstract, Introduction, Methodology, Results, Discussion, and References should be followed. The word count should not exceed 3,000 words, with a limit of 25 references and a combined total of 3 tables and figures.</p>
 
-                    <div class="sidebar-section">
-                        <h3>For Authors</h3>
-                        <div class="author-resources">
-                            <a href="#" class="resource-link">📄 Manuscript Template</a>
-                            <a href="#" class="resource-link">📝 Submission Checklist</a>
-                            <a href="#" class="resource-link">❓ FAQ for Authors</a>
-                            <a href="#" class="resource-link">📧 Email Updates</a>
-                        </div>
-                    </div>
+    <p><strong>Case Study:</strong> Present detailed accounts of one or a few cases that illustrate rare, unusual, or novel clinical or food-related phenomena. These reports are valuable for sharing unique experiences or unexpected outcomes that contribute to the advancement of knowledge or practice. A Case Study should include an Abstract, Introduction, Case Presentation, Discussion, and Conclusion. Submissions should be between 1,500 and 2,500 words in length with references provided as appropriate and may include a reasonable number of tables, figures.</p>
 
-                    <div class="sidebar-section">
-                        <h3>Contact for Submissions</h3>
-                        <div class="contact-info">
-                            <p><strong>Email:</strong><br>submissions@vivtihjournal.com</p>
-                            <p><strong>Response Time:</strong><br>48 hours for inquiries</p>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </div>
+    <p><strong>Protocol Papers:</strong> Describe the design and methodology of ongoing or planned research studies, such as clinical trials or public health interventions. These papers enhance transparency and reproducibility and allow for early peer input. A typical protocol should include the study rationale, objectives, design framework, recruitment strategies, data collection tools, and planned statistical analyses. Protocols should include an Abstract and structured sections covering the methodology. The word count should be between 3,000–4,000 words.</p>
+
+    <p><strong>White Papers:</strong> Authoritative documents that address significant challenges in food systems, nutrition policy, public health, or rural development. These papers are typically developed by experts or institutions and are meant to inform policy, guide practice, or propose strategic solutions. A White Paper should be well-structured with clearly defined sections such as Executive Summary, Background, Problem Statement, Analysis, Recommendations, and Conclusion. Submissions should range from 3,000 to 5,000 words and may include a reasonable number of tables, figures, and references as needed.</p>
+
+    <p><strong>Policy Briefs:</strong> Evidence-informed documents intended to translate research findings into actionable recommendations for policymakers, institutions, or public health stakeholders. These submissions should address timely and relevant challenges within food systems, clinical nutrition, rural health, or public policy, with a clear focus on implications for practice or governance. A Policy Brief typically includes a structured presentation of the problem, relevant scientific evidence, policy context, and proposed actions or solutions. Submissions should use accessible language and may range from 1,500 to 2,000 words. Visual elements such as tables, infographics, or bullet-point summaries are encouraged to enhance clarity.</p>
+
+    <p><strong>Educational Resources:</strong> Articles describe innovative teaching tools, community engagement models, or training methods related to food science, clinical nutrition, or public health education. These submissions are particularly valuable for educators, practitioners, and program developers working in academic, clinical, or community settings. Submissions should outline the development process, learning objectives, implementation strategies, and observed outcomes or feedback. Where applicable, authors are encouraged to include supplementary materials (e.g., worksheets, curricula, or links to digital content). Educational Resource articles typically range from 2,000 to 3,000 words and may include tables or figures to illustrate instructional models or outcomes.</p>
+
+    <p><strong>Perspectives:</strong> Scholarly essays that explore conceptual, theoretical, or emerging issues in food and nutrition science. These articles allow authors to present well-reasoned arguments, propose new frameworks, or reflect on the evolution of ideas within the discipline. Unlike opinion papers, which are more personal and informal, Perspectives are academic in tone and grounded in literature. They can address intersections between science, policy, ethics, and culture, offering readers a broader understanding of complex or evolving issues. Perspectives generally range from 2,000 to 2,500 words, may include limited references and figures, and should not include an abstract.</p>
+
+    <p><strong>Opinion Papers:</strong> Provide a platform for personal perspectives on key issues. These articles may cover controversial or emerging topics and are intended to stimulate discussion or offer fresh perspectives. Opinion Papers do not require an abstract and should focus on presenting clear, well-argued viewpoints rather than comprehensive literature reviews. The suggested word count is between 1,000 to 1,500 words. References and figures may be included where appropriate, but should remain minimal.</p>
+
+    <p><strong>Commentaries:</strong> Short, focused articles that offer scholarly insight or critical perspectives on recently published articles, emerging trends, or key issues in food science, clinical nutrition, or public health. These submissions aim to provoke discussion, highlight alternative viewpoints, or clarify controversial or ambiguous topics. A Commentary may respond to a specific article published in the Vivrtih Journal or provide thought leadership on broader themes of interest to the readership. While brief in length, typically not exceeding 1,500 words, commentaries should be well-argued and supported by relevant evidence or citations. No abstract is required, and the inclusion of tables or figures is optional but should be limited.</p>
+
+    <p><strong>Editorials:</strong> Generally solicited by the editorial board, though unsolicited submissions may also be considered. These concise articles offer insights, commentary, or reflections on relevant topics within the journal’s scope. Editorials should not include an abstract and are limited to 1,200 words, with a maximum of 12 references and up to 2 tables or figures.</p>
+
+    <p><strong>Letters to the Editor:</strong> Provide a platform for readers to share concise feedback, raise methodological questions, or offer alternative interpretations related to articles recently published in the journal. Letters may also address emerging issues in nutrition science, public health, or food safety. Submissions should be brief and focused, typically limited to 800 words and up to five references. Letters may contain a small number of clarifying data points, but tables and figures should be used sparingly or omitted entirely. These letters are subject to editorial review and may be sent to the original article authors for response.</p>
+
+    <p><strong>Selected Summaries:</strong> Consist of brief, structured overviews of important research articles published in other journals. Authors must summarise the content in their own words and provide commentary on its significance, particularly in the Indian context. These pieces should include a summary followed by critical comments and should not exceed 1,000 words. No abstract, tables, or figures are required. The original article must be cited as the first reference, and a copy of it should accompany the submission.</p>
+
+  </div>
+</details>
+
+
+        </details>
+
+       <details class="bg-white border rounded-lg p-4 mt-4">
+  <summary class="cursor-pointer font-semibold text-lg">Manuscript Preparation</summary>
+  <div class="mt-2 space-y-4 text-gray-800">
+
+    <details>
+      <summary class="font-semibold">General Formatting</summary>
+      <ul class="list-disc ml-6 mt-2">
+        <li>Text: Manuscripts should be prepared in Microsoft Word (.doc or .docx). Use a standard font like Times New Roman, 12 pt.</li>
+        <li>Margins: Set all margins to 1 inch (2.5 cm).</li>
+        <li>Line Spacing: Use 1.5 line spacing throughout the manuscript, including references.</li>
+        <li>Page Numbers: Number all pages consecutively.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Title Page</summary>
+      <p>The title should be concise, meaningful, and engaging. Abbreviations and formulae should be avoided unless widely recognized. A separate title page must include the full names, qualifications, designations, and institutional affiliations of all authors. The complete postal address and e-mail ID of the corresponding author should be clearly indicated.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Abstract</summary>
+      <p>It should summarise the purpose of the study, the methods employed, the key findings, and the principal conclusions, with emphasis on novelty and significance. References, figures, and tables should not be included. Structured abstract shall be 250 words for original articles, unstructured abstracts of 250 words for review articles and unstructured abstracts of about 150 words for all other manuscripts.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Keywords</summary>
+      <p>Authors must provide up to 5 keywords that accurately represent the content of the manuscript. Keywords should be listed alphabetically, each beginning with a capital letter and separated by commas or semicolons.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Introduction</summary>
+      <p>The introduction should briefly present the background, rationale, and objectives of the study. It must be concise, avoid unnecessary detail, and cite only relevant references. Extensive literature reviews or repetition of results are not appropriate.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Materials and Methods</summary>
+      <p>This section should provide sufficient detail to allow replication of the study. Established methods should be cited with references, less well-known methods briefly described, and any new or substantially modified methods fully explained with justification and limitations. Statistical analyses must be clearly described, including the exact tests applied and confidence intervals. For studies involving human participants or animals, authors must state details of ethical approval and informed consent.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Results</summary>
+      <p>Results should be presented in a logical sequence without repetition between text, tables, and figures. Tables and figures must be integrated within the main body of the manuscript and should be self-explanatory, with descriptive titles, captions, and legends. Statistical significance should be indicated where relevant.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Discussion</summary>
+      <p>The discussion should interpret the results in the context of existing literature, emphasise new and important findings, and highlight implications and limitations. Repetition of information from the introduction or results should be avoided.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Conclusion</summary>
+      <p>The conclusion should provide a concise summary of the principal findings and their significance. Broader implications and directions for future research may be mentioned, but new data should not be introduced.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Acknowledgements</summary>
+      <p>Acknowledgements should recognise contributions that do not meet the criteria for authorship, with prior permission obtained from those acknowledged. This section should be brief and limited to a maximum of ten entries.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Funding</summary>
+      <p>All financial support for the research must be disclosed, including grant numbers where applicable. If no funding was received, authors should use the following statement:<br>
+      <em>“The author(s) received no financial support for this research.”</em></p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Conflict of Interest</summary>
+      <p>Authors must declare any financial or personal relationships that could influence the work. If there are no conflicts, the following statement should be included:<br>
+      <em>“The author(s) declare no conflict of interest.”</em></p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Data Availability</summary>
+      <p>Authors must provide a clear statement regarding the availability of data supporting their research findings. For studies involving human participants, details on data access are mandatory and should specify whether the datasets are included in the manuscript, available in a public repository, or accessible from the corresponding author upon reasonable request. For other types of studies, a data availability statement is encouraged but may be omitted if not applicable.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Author Contributions</summary>
+      <p>Contributors should describe contributions made by each of them towards the manuscript. Description should be divided in following categories, as applicable: concept, design, definition of intellectual content, literature search, clinical studies, experimental studies, data acquisition, data analysis, statistical analysis, manuscript preparation, manuscript editing and manuscript review.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Use of AI in Manuscripts</summary>
+      <p>Generative AI tools cannot be listed as authors. Authors may use AI for language improvement, grammar checking, or formatting assistance, but they remain fully responsible for the accuracy, originality, and integrity of their work. Any use of AI in drafting, editing, or creating written or visual material must be disclosed in the Acknowledgments (and in the Methods, if applicable), including the tool’s name, version, and source.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Supplementary Files</summary>
+      <p>Authors are encouraged to provide supplementary materials that enhance their manuscript, such as extended tables, datasets, figures, protocols, or multimedia files. Where relevant, AI input prompts and outputs as supplementary files may also be shared to support transparency. These files should be deposited in open access repositories, with links included in the submission.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">References</summary>
+      <p>Authors are responsible for the accuracy of references, which must conform to the Vancouver style. References should be numbered consecutively in the order in which they appear in the text by Arabic numerals with square brackets after the punctuation marks. Avoid using abstracts as references. Manuscripts submitted but not accepted should be cited as "unpublished observations" with written permission from the source. Personal communication may be cited only if essential, with name and date in parentheses.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Tables</summary>
+      <ul class="list-disc ml-6 mt-2">
+        <li>Must be self-explanatory and not duplicate text.</li>
+        <li>Number consecutively (Table 1, 2, etc.) in the order cited.</li>
+        <li>Provide a short title above each table; explanatory notes and non-standard abbreviations should be given as footnotes.</li>
+        <li>Use footnote symbols in this order: *, †, ‡, §, ||, ¶.</li>
+        <li>Tables should be cited in the text and placed near their first mention.</li>
+        <li>Permissions must be obtained for adapted/borrowed tables, with credit lines provided.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Figures (Illustrations & Graphs)</summary>
+      <ul class="list-disc ml-6 mt-2">
+        <li>Acceptable formats: JPEG or PNG (≥300 dpi, ≤1 MB). Graphs may also be submitted in editable formats (Excel/Graphing software output).</li>
+        <li>Number consecutively (Figure 1, 2, etc.) in the order cited in the text.</li>
+        <li>Labels and symbols must be clear, uniform, and legible after reduction.</li>
+        <li>Titles and detailed explanations should be provided in figure legends, not on the figure. Legends should be concise (≤40 words).</li>
+        <li>Photographs of individuals require written consent.</li>
+        <li>Previously published figures must include source acknowledgement and copyright permission.</li>
+        <li>Journal reserves the right to adjust images for clarity and consistency.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Protection of Patients’ Rights to Privacy</summary>
+      <ul class="list-disc ml-6 mt-2">
+        <li>Identifiable information should not be published unless essential and informed consent obtained.</li>
+        <li>Authors are responsible for obtaining and archiving signed patient consent forms per ICMJE guidelines.</li>
+        <li>Facial features not relevant to the study must be digitally blurred.</li>
+        <li>Written informed consent is required; verbal consent must be documented and verified by a witness.</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Sending a Revised Manuscript</summary>
+      <p>The revised version of the manuscript should be mailed to the editor. There is no need to submit the “First Page” or “Covering Letter” file while submitting a revised version. Contributors should include referees’ remarks with point-to-point clarification and mark changes as underlined or colored text in the article.</p>
+    </details>
+
+    <details>
+      <summary class="font-semibold">Checklist</summary>
+      <p><strong>Covering letter:</strong></p>
+      <ul class="list-disc ml-6 mt-1">
+        <li>Signed by all contributors</li>
+        <li>Previous publication/presentations mentioned</li>
+        <li>Source of funding mentioned</li>
+        <li>Conflicts of interest disclosed</li>
+        <li>Acknowledgement included</li>
+      </ul>
+      <p><strong>Authors:</strong></p>
+      <ul class="list-disc ml-6 mt-1">
+        <li>Full names provided</li>
+        <li>Corresponding author with e-mail</li>
+        <li>Number of contributors restricted per instructions</li>
+        <li>Identity not revealed in paper except title page</li>
+      </ul>
+      <p><strong>Presentation and format:</strong></p>
+      <ul class="list-disc ml-6 mt-1">
+        <li>Double spacing</li>
+        <li>Margins 2.5 cm all sides</li>
+        <li>Page numbers included</li>
+        <li>Title page with all information</li>
+        <li>Abstract and keywords provided</li>
+        <li>References cited correctly</li>
+        <li>Article file without Track Changes</li>
+      </ul>
+      <p><strong>Language and grammar:</strong></p>
+      <ul class="list-disc ml-6 mt-1">
+        <li>British English</li>
+        <li>Full terms for abbreviations at first use</li>
+        <li>Numerals 1–10 spelt out, numerals at beginning spelt out</li>
+        <li>Check spelling, grammar, and punctuation</li>
+        <li>Brand names with manufacturer’s info</li>
+        <li>Species names in italics</li>
+      </ul>
+      <p><strong>Tables and figures:</strong></p>
+      <ul class="list-disc ml-6 mt-1">
+        <li>No repetition of data</li>
+        <li>Provide actual numbers for graphs</li>
+        <li>Figures of good quality and color</li>
+        <li>Arabic numbering for tables/figures</li>
+        <li>Labels pasted on back of photographs</li>
+        <li>Figure legends ≤40 words</li>
+        <li>Maintain patient privacy</li>
+        <li>Credit for borrowed figures/tables</li>
+        <li>Full term for abbreviations in tables</li>
+      </ul>
+    </details>
+  </div>
+</details>
+      </div>
     </main>
 
-    <!-- Footer -->
+    <!-- Sidebar -->
+    <aside class="lg:w-1/3 bg-white shadow-md rounded-lg p-6 border">
+      <h2 class="text-2xl font-bold mb-4">Article Processing Charges (APC)</h2>
+
+      <div class="space-y-4">
+        <p class="font-semibold">Introductory APC (for manuscripts submitted until 31 December 2025)</p>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Original Research Articles, Review Articles, White Papers: ₹2500</li>
+          <li>Short Reports, Mini Reviews, Case Studies, Protocol Papers: ₹2000</li>
+          <li>Opinion Papers, Selected Summaries: ₹750</li>
+        </ul>
+
+        <p class="font-semibold">Article Processing Charges (APC)</p>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Original Research Articles, Review Articles, White Papers: ₹3000</li>
+          <li>Short Reports, Mini Reviews, Case Studies, Protocol Papers: ₹2500</li>
+          <li>Opinion Papers, Selected Summaries: ₹1000</li>
+          <li>Editorials: No charge</li>
+        </ul>
+
+        <p class="font-semibold">Discounts and Waivers</p>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>20% discount for students and PhD researchers in their first year.</li>
+          <li>Editors: 30% waiver for up to 2 manuscripts/year.</li>
+          <li>Reviewers: 20% waiver per manuscript reviewed (max 2 manuscripts/year).</li>
+        </ul>
+
+        <p class="text-sm text-gray-500">
+APC is payable only after final acceptance. Withdrawal within 6 days: no fee. Withdrawal after review/acceptance: 50% fee.
+        </p>
+      </div>
+    </aside>
+
+  </div>
+
+	<!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Vivtih Journal</h4>
-                    <p>An open access, peer-reviewed journal for student research in food science and clinical nutrition.</p>
+                    <h4>Vivrtih Journal of Food Science and Clinical Nutrition</h4>
+                    <p>An international, open-access, peer-reviewed journal.</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="submissions.html">Submissions</a></li>
-                        <li><a href="editorial-team.html">Editorial Team</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                    
                 </div>
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="https://twitter.com/@VivtihJournal" target="_blank"><i class="fab fa-twitter"></i></a>
+                      <a href="https://twitter.com/@VivrtihJournal" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+    <i class="fab fa-twitter"></i>
+</a>
                         <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
                         <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Vivtih Journal of Food Science and Clinical Nutrition. All rights reserved.</p>
-                <p>OJS Hosting, Support, and Customization by: <a href="https://openjournalsystems.com/ojs-hosting" target="_blank">OpenJournalSystems.com</a></p>
-            </div>
+                <p>&copy; 2025 Vivrtih Journal of Food Science and Clinical Nutrition. All rights reserved.</p>
+          </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
+
+
+
