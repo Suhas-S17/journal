@@ -5,9 +5,218 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editorial Team - Vivrtih Journal of Food Science and Clinical Nutrition</title>
     <meta name="description" content="Editorial board and policies of Vivrtih Journal of Food Science and Clinical Nutrition.">
-    <link rel="stylesheet" href="styles.css">
+    <!-- Links to external resources for fonts and icons -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        /* Header and Navigation */
+        .header {
+            background-color: #fff;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-brand .logo {
+            height: 50px;
+        }
+        .nav-menu a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .nav-menu .active {
+            color: #004080;
+        }
+        /* Page Header */
+        .page-header {
+            background-color: #004080;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .page-header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 700;
+        }
+        .page-header p {
+            font-size: 1.1em;
+            font-weight: 300;
+        }
+        /* Main Content Grid */
+        .main-content {
+            padding: 20px 0;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+        .content-left {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        /* Section and Card Styling */
+        .section h2 {
+            color: #004080;
+            margin-top: 0;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        summary {
+            font-weight: 500;
+            font-size: 1.15em;
+            cursor: pointer;
+            color: #003366;
+        }
+        .content-text {
+            margin-top: 10px;
+        }
+        /* Team Member Cards */
+        .team-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .team-member {
+            background: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 15px;
+            flex: 1 1 250px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        .member-info h3 {
+            margin-top: 0;
+            color: #004080;
+            font-size: 1.2em;
+        }
+        .member-info .title, .member-info .affiliation {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+        .member-contact {
+            margin-top: 10px;
+            color: #555;
+        }
+        .member-contact i {
+            margin-right: 5px;
+            color: #004080;
+        }
+        /* Sidebar Sections */
+        .sidebar-section {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        .sidebar-section h3 {
+            color: #004080;
+            margin-top: 0;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar li {
+            margin-bottom: 5px;
+        }
+        .important-links a {
+            display: block;
+            background-color: #0056b3;
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+        .important-links a:hover {
+            background-color: #004080;
+        }
+        /* Footer */
+        .footer {
+            background-color: #004080;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .footer-section h4 {
+            color: #fff;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+        }
+        .social-links a {
+            color: #fff;
+            font-size: 1.5em;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #ccc;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #fff;
+            margin-top: 20px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                grid-row-start: 1; /* Puts the sidebar at the top on small screens */
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -16,7 +225,8 @@
             <nav class="navbar">
                 <div class="nav-brand">
                     <a href="index.html">
-                        <img src="assets/vivtih-logo.svg" alt="Vivrtih Journal Logo" class="logo">
+                        <!-- Use a placeholder for the logo -->
+                        <img src="https://placehold.co/150x50/cccccc/333333?text=Logo" alt="Vivrtih Journal Logo" class="logo">
                     </a>
                 </div>
                 <div class="nav-toggle" id="nav-toggle">
@@ -102,6 +312,76 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="team-member">
+                                    <div class="member-info">
+                                        <h3>Dr. D. Editor</h3>
+                                        <p class="title">Professor of Food Technology</p>
+                                        <p class="affiliation">PQR University</p>
+                                        <div class="member-contact">
+                                            <p><i class="fas fa-envelope"></i> d.editor@pqr.edu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="member-info">
+                                        <h3>Dr. E. Editor</h3>
+                                        <p class="title">Associate Professor of Biochemistry</p>
+                                        <p class="affiliation">UVW Institute</p>
+                                        <div class="member-contact">
+                                            <p><i class="fas fa-envelope"></i> e.editor@uvw.edu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="member-info">
+                                        <h3>Dr. F. Editor</h3>
+                                        <p class="title">Senior Lecturer in Nutrition</p>
+                                        <p class="affiliation">JKL College</p>
+                                        <div class="member-contact">
+                                            <p><i class="fas fa-envelope"></i> f.editor@jkl.edu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="member-info">
+                                        <h3>Dr. G. Editor</h3>
+                                        <p class="title">Assistant Professor of Public Health</p>
+                                        <p class="affiliation">MNO University</p>
+                                        <div class="member-contact">
+                                            <p><i class="fas fa-envelope"></i> g.editor@mno.edu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="member-info">
+                                        <h3>Dr. H. Editor</h3>
+                                        <p class="title">Associate Professor of Clinical Dietetics</p>
+                                        <p class="affiliation">STU Institute</p>
+                                        <div class="member-contact">
+                                            <p><i class="fas fa-envelope"></i> h.editor@stu.edu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="member-info">
+                                        <h3>Dr. I. Editor</h3>
+                                        <p class="title">Professor of Food Science</p>
+                                        <p class="affiliation">RST University</p>
+                                        <div class="member-contact">
+                                            <p><i class="fas fa-envelope"></i> i.editor@rst.edu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="member-info">
+                                        <h3>Dr. J. Editor</h3>
+                                        <p class="title">Associate Professor of Dietetics</p>
+                                        <p class="affiliation">EFG College</p>
+                                        <div class="member-contact">
+                                            <p><i class="fas fa-envelope"></i> j.editor@efg.edu</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </details>
 
@@ -129,6 +409,51 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="team-member">
+                                    <div class="member-info">
+                                        <h3>Dr. Z. Manager</h3>
+                                        <p class="title">Senior Managing Editor</p>
+                                        <p class="affiliation">UVW University</p>
+                                        <div class="member-contact">
+                                            <p><i class="fas fa-envelope"></i> z.manager@uvw.edu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="team-member">
+                                    <div class="member-info">
+                                        <h3>Ms. Q. Manager</h3>
+                                        <p class="title">Managing Editor</p>
+                                        <p class="affiliation">RST Institute</p>
+                                        <div class="member-contact">
+                                            <p><i class="fas fa-envelope"></i> q.manager@rst.edu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </details>
+
+                        <!-- Editorial Responsibilities - Now a collapsible section -->
+                        <details class="card">
+                            <summary>Editorial Responsibilities</summary>
+                            <div class="content-text">
+                                <h4>Editor in Chief</h4>
+                                <ul>
+                                    <li>Oversees editorial strategy and quality</li>
+                                    <li>Manages complex cases and ethical issues</li>
+                                    <li>Final decision authority</li>
+                                </ul>
+                                <h4>Associate Editors</h4>
+                                <ul>
+                                    <li>Manage peer review process</li>
+                                    <li>Select appropriate reviewers</li>
+                                    <li>Make editorial decisions</li>
+                                </ul>
+                                <h4>Managing Editors</h4>
+                                <ul>
+                                    <li>Handle administrative tasks</li>
+                                    <li>Assign manuscripts to editors</li>
+                                    <li>Ensure timely processing</li>
+                                </ul>
                             </div>
                         </details>
 
@@ -136,16 +461,25 @@
                         <details class="card">
                             <summary>Editorial Policy</summary>
                             <div class="content-text">
-                                <p><strong>Vivrtih Journal of Food Science and Clinical Nutrition</strong> is dedicated to ensuring the integrity, quality, and accessibility of the scientific content we publish. This policy serves as a comprehensive guide for authors, reviewers, editors, and readers regarding the journal's editorial standards and practices.</p>
+                                <p><strong>Vivrtih Journal of Food Science and Clinical Nutrition</strong> is dedicated to ensuring the integrity, quality, and accessibility of the scientific content we publish. This policy serves as a comprehensive guide for authors, reviewers, editors, and readers regarding the journal’s editorial standards and practices.</p>
                                 <p>We follow the ethical principles outlined by the Committee on Publication Ethics (COPE) and maintain transparency at every stage of the editorial and publication process.</p>
 
-                                <h4>Scope and Objectives</h4>
+                                <h3>Scope and Objectives</h3>
                                 <p>The journal focuses on advancing research in the fields of clinical nutrition, food science, and food technology disciplines.</p>
                                 <ul>
-                                    <li>Promote the dissemination of innovative research</li>
-                                    <li>Provide a platform for global collaboration and knowledge exchange</li>
-                                    <li>Enhance awareness and understanding of critical topics in nutrition and food science</li>
+                                    <li>Promote the dissemination of innovative research.</li>
+                                    <li>Provide a platform for global collaboration and knowledge exchange.</li>
+                                    <li>Enhance awareness and understanding of critical topics in nutrition and food science.</li>
                                 </ul>
+
+                                <h3>Appeals and Complaints</h3>
+                                <p>The authors have the right to appeal if they have a genuine cause to believe that the editorial board has wrongly rejected the paper. If the authors wish to appeal the decision, they should email the editorial office [Email of journal] explaining in detail the reason for the appeal. The appeals will be acknowledged by the editorial office and will be investigated in an unbiased manner. The processing of appeals will be done within 6 – 8 weeks. While under appeal, the said manuscript should not be submitted to other journals. The final decision rests with the Editor in Chief. Second appeals are not considered.</p>
+
+                                <h3>Disclaimer</h3>
+                                <p>The views and findings expressed in published articles are those of the authors and do not necessarily reflect the journal’s or publisher’s opinions.</p>
+
+                                <h3>Amendments to the Policy</h3>
+                                <p>VJFSCN reserves the right to amend or update the Policies of the journal at any time to comply with evolving laws or best practices. All changes will be published in the journal, and authors and contributors are encouraged to review the policy regularly.</p>
                             </div>
                         </details>
 
@@ -153,59 +487,55 @@
                         <details class="card">
                             <summary>Peer Review Policy</summary>
                             <div class="content-text">
-                                <p>Our journal employs a double-blind peer review process to ensure fairness and objectivity. All submitted manuscripts are initially reviewed by editors for suitability for formal review.</p>
-                                
-                                <h4>Review Process</h4>
+                                <p>A manuscript will be reviewed for publication with the understanding that it is being submitted to Vivrtih Journal of Food Science and Clinical Nutrition alone at that point in time and has not been published anywhere, simultaneously submitted, or already accepted for publication elsewhere. Authors should authorise one of them to correspond with the Journal for all matters related to the manuscript. All manuscripts received are duly acknowledged.</p>
+
+                                <p>Our journal employs a double-blind peer review process to ensure fairness and objectivity. All submitted manuscripts are initially reviewed by editors for suitability for formal review. Manuscripts with insufficient originality, serious flaws, or a lack of a significant message are rejected at this stage. Manuscripts that are not in the scope of the journal are also liable to be rejected at this stage.</p>
+
+                                <p>Manuscripts received from Editorial Board members will be screened by the Editor in Chief or other Associate Editors and sent to external peer reviewers. The editorial board members who are authors will be excluded from publication decisions.</p>
+
+                                <h4>Peer Review Process</h4>
                                 <ol>
-                                    <li><strong>Manuscript Submission</strong> – Authors submit via online portal or email</li>
-                                    <li><strong>Initial Screening</strong> – Check for plagiarism and ethical violations</li>
-                                    <li><strong>Assignment to Editors</strong> – Assign to relevant Associate Editor</li>
-                                    <li><strong>Peer Review</strong> – Two qualified reviewers evaluate the manuscript</li>
-                                    <li><strong>Editorial Decision</strong> – Final decision based on reviewer feedback</li>
-                                    <li><strong>Publication</strong> – Copyediting and online publication</li>
+                                    <li><strong>Step 1:</strong> Manuscript Submission – Authors submit their manuscripts via the journal’s online portal or email.</li>
+                                    <li><strong>Step 2:</strong> Initial Screening – The Managing Editor checks for plagiarism and ethical violations, and verifies that the manuscript is within the journal's scope and follows submission guidelines.</li>
+                                    <li><strong>Step 3:</strong> Assignment to Associate Editors – The Managing Editor assigns manuscripts to the relevant Associate Editor or the Chief Editor based on subject expertise.</li>
+                                    <li><strong>Step 4:</strong> Peer Review Process – The Associate Editor assigns the manuscript to two qualified reviewers, or more when required. Reviewers evaluate the manuscript for scientific validity, originality, methodology, and clarity of writing.</li>
+                                    <li><strong>Step 5:</strong> Editorial Decision – The Associate Editor reviews the feedback and makes a final decision.</li>
+                                    <li><strong>Step 6:</strong> Copyediting & Publication – Once accepted, the manuscript undergoes copyediting for formatting and language and is then published online.</li>
                                 </ol>
 
-                                <h4>Decision Criteria</h4>
+                                <h4>Review and Decision Criteria</h4>
                                 <ul>
-                                    <li>Relevance to journal scope</li>
-                                    <li>Originality and contribution to knowledge</li>
-                                    <li>Scientific rigor and methodology</li>
-                                    <li>Clarity of writing and organization</li>
-                                    <li>Ethical integrity</li>
+                                    <li>Relevance – The study must align with the journal's scope and focus.</li>
+                                    <li>Originality/Contribution – The research should contribute novel findings, validate previous studies through replication, or present well-structured findings.</li>
+                                    <li>Scientific Rigour – The methods, data, and analyses must be accurate and well-structured.</li>
+                                    <li>Clarity – The manuscript should be well-written and logically organised.</li>
+                                    <li>Ethical Integrity – The manuscript must adhere to ethical research and publishing standards.</li>
+                                    <li>Constructive Feedback – Peer reviewers’ comments must be constructive and sufficiently addressed by the authors.</li>
                                 </ul>
+
+                                <h4>Decision Thresholds</h4>
+                                <ul>
+                                    <li><strong>Acceptance:</strong> A manuscript requires at least two positive reviews for acceptance. Minor revisions may be accepted if reviewers find no significant flaws.</li>
+                                    <li><strong>Revision:</strong> If at least one reviewer requests major revisions, the author must submit a revised manuscript addressing all concerns. This revised manuscript will undergo a second round of review before a final decision.</li>
+                                    <li><strong>Rejection:</strong> A manuscript will be rejected if both reviewers recommend rejection due to fundamental flaws or ethical issues.</li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <!-- Correction & Retraction Policy -->
+                        <details class="card">
+                            <summary>Correction and Retraction Policy</summary>
+                            <div class="content-text">
+                                <h3>Corrections:</h3>
+                                <p>Corrections are issued when the accuracy of published information is significantly compromised. These corrections are published in a subsequent issue of the journal under the sections “Corrections” and “Addenda.”</p>
+                                <h3>Retractions:</h3>
+                                <p>Retractions occur when the fundamental conclusions of a paper are seriously undermined. This policy ensures that the integrity of the scientific record is maintained by addressing significant issues that impact the reliability of the research.</p>
                             </div>
                         </details>
                     </section>
                 </div>
-
-                <!-- Sidebar -->
-                <aside class="sidebar">
-                    <div class="sidebar-section">
-                        <h3>Editorial Responsibilities</h3>
-                        
-                        <h4>Editor in Chief</h4>
-                        <ul>
-                            <li>Oversees editorial strategy and quality</li>
-                            <li>Manages complex cases and ethical issues</li>
-                            <li>Final decision authority</li>
-                        </ul>
-                        
-                        <h4>Associate Editors</h4>
-                        <ul>
-                            <li>Manage peer review process</li>
-                            <li>Select appropriate reviewers</li>
-                            <li>Make editorial decisions</li>
-                        </ul>
-                        
-                        <h4>Managing Editors</h4>
-                        <ul>
-                            <li>Handle administrative tasks</li>
-                            <li>Assign manuscripts to editors</li>
-                            <li>Ensure timely processing</li>
-                        </ul>
-                    </div>
-
-                    <!-- Contact Information -->
+                <!-- Contact and Links - Now in a sidebar -->
+                <div class="sidebar">
                     <div class="sidebar-section">
                         <h3>Contact Editorial Office</h3>
                         <div class="contact-info">
@@ -215,7 +545,6 @@
                         </div>
                     </div>
 
-                    <!-- Important Links -->
                     <div class="sidebar-section">
                         <h3>Important Links</h3>
                         <div class="important-links">
@@ -225,7 +554,7 @@
                             <a href="contact.html" class="important-link">Contact</a>
                         </div>
                     </div>
-                </aside>
+                </div>
             </div>
         </div>
     </main>
