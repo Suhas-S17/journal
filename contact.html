@@ -16,6 +16,63 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+    /* Header fixes */
+    .header .logo {
+      max-height: 40px;
+      width: auto;
+      display: block;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+    }
+
+    .nav-toggle {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .nav-toggle span {
+      display: block;
+      height: 3px;
+      width: 25px;
+      background: #333;
+      border-radius: 2px;
+    }
+
+    /* Hero Section */
+    .page-header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .page-header h1 {
+      font-size: 1.8rem;
+      line-height: 1.3;
+    }
+
+    .page-header p {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .page-header h1 {
+        font-size: 1.5rem;
+      }
+
+      .page-header p {
+        font-size: 0.95rem;
+      }
+    }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -24,7 +81,7 @@
             <nav class="navbar">
                 <div class="nav-brand">
                     <a href="index.html">
-                        <img src="assets/vivtih-logo.svg" alt="Vivrtih Journal Logo" class="logo">
+                        <img src="assets/vivrtih-logo.svg" alt="Vivrtih Journal of Food Science and Clinical Nutrition Logo" class="logo">
                     </a>
                 </div>
                 <div class="nav-toggle" id="nav-toggle">
@@ -38,7 +95,7 @@
                     <a href="issues.html" class="nav-link">Issues</a>
                     <a href="submissions.html" class="nav-link">Submissions</a>
                     <a href="editorial-board-and-policies.html" class="nav-link">Editorial Board & Policies</a>
-                     <a href="peer-review.html" class="nav-link">Peer Review Policy</a>
+                    <a href="peer-review.html" class="nav-link">Peer Review Policy</a>
                     <a href="contact.html" class="nav-link active">Contact</a>
                 </div>
             </nav>
@@ -176,18 +233,14 @@
 
                 <!-- Sidebar -->
                 <aside class="sidebar">
-        <div class="sidebar-section">
-                        <h3>For Urgent Matters</h3>
-                        <div class="urgent-contact">
-                            <p>If you have an urgent editorial matter or time-sensitive submission question, please contact:</p>
-                            <p><strong>Managing Editors</strong><br>
-                            <a href="mailto:editor@Vivrtihjournal.com">editors@Vivrtihjournal.com</a></p>
-                           
-                        </div>
+                  <div class="sidebar-section">
+                    <h3>For Urgent Matters</h3>
+                    <div class="urgent-contact">
+                      <p>If you have an urgent editorial matter or time-sensitive submission question, please contact:</p>
+                      <p><strong>Managing Editors</strong><br>
+                      <a href="mailto:editors@Vivrtihjournal.com">editors@Vivrtihjournal.com</a></p>
                     </div>
-
-                
-                    </div>
+                  </div>
                 </aside>
             </div>
         </div>
@@ -205,9 +258,9 @@
                 <div class="footer-section">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="https://twitter.com/@VivrtihJournal" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/@VivrtihJournal" target="_blank" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -220,5 +273,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
