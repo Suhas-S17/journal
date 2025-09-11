@@ -9,13 +9,70 @@
     <meta name="apple-mobile-web-app-title" content="Vivrtih Journal">
     <meta name="theme-color" content="#007bff">
     <meta name="format-detection" content="telephone=no">
-    <title>About - Vivrtih Journal of Food Science and Clinical Nutrition</title>
+   <title>About - Vivrtih Journal of Food Science and Clinical Nutrition</title>
     <meta name="description" content="Learn about the Vivrtih Journal's mission, scope, and commitment to publishing high-quality student research in food science and clinical nutrition.">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <style>
+    /* Header fixes */
+    .header .logo {
+      max-height: 40px;
+      width: auto;
+      display: block;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 15px;
+    }
+
+    .nav-toggle {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .nav-toggle span {
+      display: block;
+      height: 3px;
+      width: 25px;
+      background: #333;
+      border-radius: 2px;
+    }
+
+    /* Hero Section */
+    .page-header {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .page-header h1 {
+      font-size: 1.8rem;
+      line-height: 1.3;
+    }
+
+    .page-header p {
+      font-size: 1rem;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .page-header h1 {
+        font-size: 1.5rem;
+      }
+
+      .page-header p {
+        font-size: 0.95rem;
+      }
+    }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -215,6 +272,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
