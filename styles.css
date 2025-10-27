@@ -394,7 +394,7 @@ body {
 
 /* Page Header Styles */
 .page-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #007bff;
     color: white;
     padding: 120px 0 80px;
     text-align: center;
