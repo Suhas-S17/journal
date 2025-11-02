@@ -127,6 +127,7 @@ body {
     color: white;
     padding: 120px 0 80px;
     text-align: center;
+    margin-top: 70px; /* Account for fixed header */
 }
 
 .hero-content {
@@ -183,6 +184,7 @@ body {
 /* Main Content */
 .main-content {
     padding: 4rem 0;
+    margin-top: 70px; /* Account for fixed header */
 }
 
 .content-grid {
@@ -398,6 +400,7 @@ body {
     color: white;
     padding: 120px 0 80px;
     text-align: center;
+    margin-top: 70px; /* Account for fixed header */
 }
 
 .page-header h1 {
@@ -533,6 +536,14 @@ body {
 .expertise {
     color: #666;
     font-size: 0.9rem;
+}
+
+/* Editors Grid - Two Column Layout */
+.editors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* Student Assistants */
@@ -1683,6 +1694,141 @@ body {
     line-height: 1.4;
 }
 
+/* Timeline Table Styling */
+.timeline-table {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 0.95rem;
+}
+
+.timeline-table thead {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    color: white;
+}
+
+.timeline-table thead th {
+    padding: 1.2rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 3px solid #0056b3;
+}
+
+.timeline-table tbody tr {
+    border-bottom: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+}
+
+.timeline-table tbody tr:hover {
+    background: #f8f9fa;
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+}
+
+.timeline-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.timeline-table tbody td {
+    padding: 1.2rem 1rem;
+    color: #333;
+    line-height: 1.6;
+    vertical-align: top;
+}
+
+.timeline-table tbody td:first-child {
+    font-weight: 600;
+    color: #007bff;
+    border-left: 4px solid transparent;
+}
+
+.timeline-table tbody tr:hover td:first-child {
+    border-left-color: #007bff;
+}
+
+.timeline-table tbody td:nth-child(2) {
+    color: #666;
+    max-width: 400px;
+}
+
+.timeline-table tbody td:last-child {
+    font-weight: 600;
+    color: #28a745;
+    white-space: nowrap;
+    text-align: center;
+    background: #f8fef9;
+    border-radius: 6px;
+}
+
+/* Alternating row colors for better readability */
+.timeline-table tbody tr:nth-child(even) {
+    background: #fafbfc;
+}
+
+.timeline-table tbody tr:nth-child(even):hover {
+    background: #f0f4f8;
+}
+
+/* Responsive table for mobile */
+@media (max-width: 768px) {
+    .timeline-table {
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+    
+    .timeline-table table {
+        font-size: 0.85rem;
+    }
+    
+    .timeline-table thead th {
+        padding: 1rem 0.7rem;
+        font-size: 0.85rem;
+    }
+    
+    .timeline-table tbody td {
+        padding: 1rem 0.7rem;
+    }
+    
+    .timeline-table tbody td:nth-child(2) {
+        max-width: none;
+    }
+    
+    .timeline-table tbody tr:hover {
+        transform: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline-table {
+        margin: 1rem -1rem;
+        border-radius: 0;
+    }
+    
+    .timeline-table table {
+        font-size: 0.8rem;
+        min-width: 600px;
+    }
+    
+    .timeline-table thead th,
+    .timeline-table tbody td {
+        padding: 0.8rem 0.5rem;
+    }
+    
+    .timeline-table thead th {
+        font-size: 0.75rem;
+    }
+}
+
 /* Enhanced Responsive Design for All Devices */
 
 /* Mobile-First: Apply to all mobile devices (up to 767px) */
@@ -1818,6 +1964,7 @@ body {
     
     .hero {
         padding: 3rem 0;
+        margin-top: 60px; /* Adjust for smaller mobile header */
     }
     
     .hero h1 {
@@ -1830,6 +1977,7 @@ body {
     
     .page-header {
         padding: 3rem 0;
+        margin-top: 60px; /* Adjust for smaller mobile header */
     }
     
     .page-header h1 {
@@ -1916,6 +2064,7 @@ body {
     .hero {
         padding: 2.5rem 0;
         text-align: center;
+        margin-top: 56px; /* Adjust for smaller mobile header */
     }
     
     .hero h1 {
@@ -1931,6 +2080,7 @@ body {
     .page-header {
         padding: 2.5rem 0;
         text-align: center;
+        margin-top: 56px; /* Adjust for smaller mobile header */
     }
     
     .page-header h1 {
@@ -2109,6 +2259,7 @@ body {
     .hero {
         padding: 2rem 0;
         text-align: center;
+        margin-top: 50px; /* Adjust for smaller mobile header */
     }
     
     .hero h1 {
@@ -2125,6 +2276,7 @@ body {
     .page-header {
         padding: 2rem 0;
         text-align: center;
+        margin-top: 50px; /* Adjust for smaller mobile header */
     }
     
     .page-header h1 {
@@ -2319,6 +2471,7 @@ body {
     /* Better spacing for mobile */
     .main-content {
         padding: 2rem 0;
+        margin-top: 50px; /* Account for fixed header on mobile */
     }
     
     .section:last-child {
@@ -2330,10 +2483,12 @@ body {
 @media (max-width: 767px) and (orientation: landscape) {
     .hero {
         padding: 1.5rem 0;
+        margin-top: 50px;
     }
     
     .page-header {
         padding: 1.5rem 0;
+        margin-top: 50px;
     }
     
     .nav-menu {
@@ -2516,6 +2671,12 @@ body {
         min-width: 44px;
     }
     
+    /* Editors grid - single column on mobile */
+    .editors-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
     /* Enhanced tap targets */
     .card, .announcement-card {
         cursor: pointer;
@@ -2576,10 +2737,12 @@ body {
 @media (max-width: 767px) and (orientation: landscape) {
     .hero {
         padding: 1.5rem 0;
+        margin-top: 50px;
     }
     
     .page-header {
         padding: 1.5rem 0;
+        margin-top: 50px;
     }
     
     .nav-menu {
