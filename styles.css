@@ -5,11 +5,17 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .container {
@@ -154,7 +160,7 @@ body {
 .hero {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-    padding: 120px 0 80px;
+    padding: 60px 0 40px;
     text-align: center;
     margin-top: 70px; /* Account for fixed header */
 }
@@ -427,7 +433,7 @@ body {
 .page-header {
     background: #007bff;
     color: white;
-    padding: 120px 0 80px;
+    padding: 60px 0 40px;
     text-align: center;
     margin-top: 70px; /* Account for fixed header */
 }
@@ -1723,6 +1729,100 @@ body {
     line-height: 1.4;
 }
 
+/* Timeline List Styling - Mobile-Friendly Alternative to Table */
+.timeline-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.timeline-item {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-left: 4px solid #007bff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.15);
+    border-left-color: #0056b3;
+}
+
+.timeline-stage {
+    color: #007bff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-stage::before {
+    content: "▸";
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.timeline-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.timeline-duration {
+    color: #28a745;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    background: #f8fef9;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+/* Responsive adjustments for timeline list */
+@media (max-width: 768px) {
+    .timeline-item {
+        padding: 1.25rem;
+    }
+    
+    .timeline-stage {
+        font-size: 1rem;
+    }
+    
+    .timeline-description {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline-list {
+        gap: 1rem;
+    }
+    
+    .timeline-item {
+        padding: 1rem;
+    }
+    
+    .timeline-stage {
+        font-size: 0.95rem;
+    }
+    
+    .timeline-description {
+        font-size: 0.85rem;
+    }
+    
+    .timeline-duration {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
 /* Timeline Table Styling */
 .timeline-table {
     overflow-x: auto;
@@ -1839,22 +1939,99 @@ body {
 
 @media (max-width: 576px) {
     .timeline-table {
-        margin: 1rem -1rem;
-        border-radius: 0;
+        margin: 1rem 0;
+        border-radius: 8px;
+        overflow: visible;
+        box-shadow: none;
     }
     
     .timeline-table table {
-        font-size: 0.8rem;
-        min-width: 600px;
+        border: 0;
+        display: block;
+        width: 100%;
     }
     
-    .timeline-table thead th,
+    .timeline-table thead {
+        display: none;
+    }
+    
+    .timeline-table tbody {
+        display: block;
+        width: 100%;
+    }
+    
+    .timeline-table tbody tr {
+        display: block;
+        width: 100%;
+        margin-bottom: 1rem;
+        border: 1px solid #e9ecef;
+        border-radius: 8px;
+        padding: 1rem;
+        background: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        box-sizing: border-box;
+    }
+    
+    .timeline-table tbody tr:hover {
+        transform: none;
+        box-shadow: 0 4px 12px rgba(0, 123, 255, 0.12);
+    }
+    
     .timeline-table tbody td {
-        padding: 0.8rem 0.5rem;
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 0.5rem 0;
+        border: none;
+        background: transparent !important;
+        box-sizing: border-box;
     }
     
-    .timeline-table thead th {
-        font-size: 0.75rem;
+    .timeline-table tbody td:first-child {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #007bff;
+        border-left: none;
+        padding-bottom: 0.75rem;
+        margin-bottom: 0.5rem;
+        border-bottom: 2px solid #e9ecef;
+    }
+    
+    .timeline-table tbody td:nth-child(2) {
+        font-size: 0.9rem;
+        color: #666;
+        padding-bottom: 0.75rem;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    
+    .timeline-table tbody td:nth-child(2)::before {
+        content: "Process: ";
+        font-weight: 600;
+        color: #333;
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+    
+    .timeline-table tbody td:last-child {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #28a745;
+        background: #f8fef9 !important;
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+        margin-top: 0.5rem;
+        white-space: normal;
+        text-align: left;
+        width: auto;
+        display: inline-block;
+    }
+    
+    .timeline-table tbody td:last-child::before {
+        content: "Duration: ";
+        font-weight: 600;
+        color: #333;
     }
 }
 
