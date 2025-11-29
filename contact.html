@@ -61,64 +61,64 @@
 
 <!-- Main Content -->
 <main class="main-content" id="main">
-  <div class="container">
-    <div class="content-grid">
+  <div class="container mx-auto px-4">
+    <!-- Grid: 2-column on large screens (left content + sticky right aside) -->
+    <div class="content-grid grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-      <!-- Left column: contact cards, response times -->
-      <div class="content-left">
+      <!-- Left column: contact cards + response times -->
+      <div class="content-left lg:col-span-2">
 
-        <section class="section contact-section" aria-labelledby="contact-info-heading">
-          <h2 id="contact-info-heading">Contact Information</h2>
+        <section class="section contact-section mb-10" aria-labelledby="contact-info-heading">
+          <h2 id="contact-info-heading" class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Contact Information</h2>
 
-          <!-- Use a list for the contact cards for better semantics -->
-          <ul class="contact-cards" role="list">
-            <li class="contact-card">
-              <div class="contact-icon" aria-hidden="true">
-                <i class="fas fa-envelope" aria-hidden="true"></i>
+          <ul class="contact-cards grid grid-cols-1 sm:grid-cols-2 gap-6" role="list">
+            <li class="contact-card bg-white p-6 rounded-xl shadow border border-gray-100 flex items-start space-x-4">
+              <div class="contact-icon text-indigo-600 text-2xl" aria-hidden="true">
+                <i class="fas fa-envelope"></i>
               </div>
               <div class="contact-details">
-                <h3>Submissions</h3>
-                <p>For manuscript submission</p>
-                <a href="mailto:submission@vivrtihjournal.com" aria-label="Email submissions at submission at vivrtihjournal dot com">
+                <h3 class="text-lg font-semibold text-gray-900">Submissions</h3>
+                <p class="text-gray-600">For manuscript submission</p>
+                <a href="mailto:submission@vivrtihjournal.com" class="text-indigo-600 hover:underline" aria-label="Email submissions at submission at vivrtihjournal dot com">
                   submission@vivrtihjournal.com
                 </a>
               </div>
             </li>
 
-            <li class="contact-card">
-              <div class="contact-icon" aria-hidden="true">
-                <i class="fas fa-question-circle" aria-hidden="true"></i>
+            <li class="contact-card bg-white p-6 rounded-xl shadow border border-gray-100 flex items-start space-x-4">
+              <div class="contact-icon text-teal-600 text-2xl" aria-hidden="true">
+                <i class="fas fa-question-circle"></i>
               </div>
               <div class="contact-details">
-                <h3>General Inquiries</h3>
-                <p>For general questions</p>
-                <a href="mailto:queries@vivrtihjournal.com" aria-label="Email queries at queries at vivrtihjournal dot com">
+                <h3 class="text-lg font-semibold text-gray-900">General Inquiries</h3>
+                <p class="text-gray-600">For general questions</p>
+                <a href="mailto:queries@vivrtihjournal.com" class="text-teal-600 hover:underline" aria-label="Email queries at queries at vivrtihjournal dot com">
                   queries@vivrtihjournal.com
                 </a>
               </div>
             </li>
 
-            <li class="contact-card">
-              <div class="contact-icon" aria-hidden="true">
-                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+            <li class="contact-card bg-white p-6 rounded-xl shadow border border-gray-100 flex items-start space-x-4">
+              <div class="contact-icon text-indigo-600 text-2xl" aria-hidden="true">
+                <i class="fas fa-paper-plane"></i>
               </div>
               <div class="contact-details">
-                <h3>Contact</h3>
-                <p>For support and all non-academic communication with the journal</p>
-                <a href="mailto:contact@vivrtihjournal.com" aria-label="Email contact at contact at vivrtihjournal dot com">
+                <h3 class="text-lg font-semibold text-gray-900">Contact</h3>
+                <p class="text-gray-600">For support and all non-academic communication with the journal</p>
+                <a href="mailto:contact@vivrtihjournal.com" class="text-indigo-600 hover:underline" aria-label="Email contact at contact at vivrtihjournal dot com">
                   contact@vivrtihjournal.com
                 </a>
               </div>
             </li>
 
-            <li class="contact-card">
-              <div class="contact-icon" aria-hidden="true">
-                <i class="fas fa-user-tie" aria-hidden="true"></i>
+            <li class="contact-card bg-white p-6 rounded-xl shadow border border-gray-100 flex items-start space-x-4">
+              <div class="contact-icon text-gray-800 text-2xl" aria-hidden="true">
+                <i class="fas fa-user-tie"></i>
               </div>
               <div class="contact-details">
-                <h3>Managing Editors</h3>
-                <p>To contact Managing Editors</p>
-                <a href="mailto:managingeditor@vivrtihjournal.com" aria-label="Email managing editor at managingeditor at vivrtihjournal dot com">
+                <h3 class="text-lg font-semibold text-gray-900">Managing Editors</h3>
+                <p class="text-gray-600">To contact Managing Editors</p>
+                <a href="mailto:managingeditor@vivrtihjournal.com" class="text-gray-800 hover:underline" aria-label="Email managing editor at managingeditor at vivrtihjournal dot com">
                   managingeditor@vivrtihjournal.com
                 </a>
               </div>
@@ -126,96 +126,52 @@
           </ul>
         </section>
 
-        <!-- (Optional) Contact form: keep commented out until you have a server endpoint -->
-        <!--
-        <section class="section" aria-labelledby="send-message-heading">
-          <h2 id="send-message-heading">Send Us a Message</h2>
-          <div class="card">
-            <form class="contact-form" id="contact-form" method="post" action="/api/contact" novalidate>
-              <fieldset>
-                <legend class="sr-only">Contact form</legend>
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="first-name">First Name *</label>
-                    <input type="text" id="first-name" name="firstName" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="last-name">Last Name *</label>
-                    <input type="text" id="last-name" name="lastName" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email Address *</label>
-                  <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                  <label for="affiliation">Institution / Affiliation</label>
-                  <input type="text" id="affiliation" name="affiliation">
-                </div>
-                <div class="form-group">
-                  <label for="subject">Subject *</label>
-                  <select id="subject" name="subject" required>
-                    <option value="">Select a subject</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="submission">Submission Question</option>
-                    <option value="review">Peer Review</option>
-                    <option value="technical">Technical Support</option>
-                    <option value="partnership">Partnership Opportunity</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="message">Message *</label>
-                  <textarea id="message" name="message" rows="6" required placeholder="Please provide details about your inquiry..."></textarea>
-                </div>
+        <!-- Your provided Tailwind-styled Response Times section -->
+        <section class="section response-section mb-10" aria-labelledby="response-times-heading">
+          <h2 id="response-times-heading" class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Response Times</h2>
 
-                <div class="form-group">
-                  <button type="submit" class="btn btn-primary btn-large">Send Message</button>
-                </div>
-              </fieldset>
-            </form>
-          </div>
-        </section>
-        -->
+          <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+            <dl class="response-times grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
+              <div class="response-item border-l-4 border-indigo-400 pl-4">
+                <dt class="text-lg font-semibold text-gray-900">General Inquiries</dt>
+                <dd class="text-gray-600">48 hours during business days</dd>
+              </div>
+              <div class="response-item border-l-4 border-teal-400 pl-4">
+                <dt class="text-lg font-semibold text-gray-900">Submission Questions</dt>
+                <dd class="text-gray-600">24–48 hours</dd>
+              </div>
+              <div class="response-item border-l-4 border-amber-400 pl-4">
+                <dt class="text-lg font-semibold text-gray-900">Technical Support</dt>
+                <dd class="text-gray-600">24 hours for urgent issues</dd>
+              </div>
+              <div class="response-item border-l-4 border-red-400 pl-4">
+                <dt class="text-lg font-semibold text-gray-900">Editorial Matters</dt>
+                <dd class="text-gray-600">72 hours</dd>
+              </div>
+            </dl>
 
-        <section class="section response-section" aria-labelledby="response-times-heading">
-          <h2 id="response-times-heading">Response Times</h2>
-          <div class="card">
-            <div class="response-times" role="list">
-              <div class="response-item" role="listitem">
-                <h4>General Inquiries</h4>
-                <p>48 hours during business days</p>
-              </div>
-              <div class="response-item" role="listitem">
-                <h4>Submission Questions</h4>
-                <p>24–48 hours</p>
-              </div>
-              <div class="response-item" role="listitem">
-                <h4>Technical Support</h4>
-                <p>24 hours for urgent issues</p>
-              </div>
-              <div class="response-item" role="listitem">
-                <h4>Editorial Matters</h4>
-                <p>72 hours</p>
-              </div>
-            </div>
-            <p><em>Note: Response times may be longer during holidays and academic breaks.</em></p>
+            <p class="mt-6 pt-4 border-t text-sm text-gray-500">
+              <em>Note: Response times may be longer during holidays and academic breaks.</em>
+            </p>
           </div>
         </section>
 
       </div> <!-- /.content-left -->
 
-      <!-- Right column: address -->
-      <aside class="content-right" aria-labelledby="address-heading">
+      <!-- Right column: address (sticky on large screens) -->
+      <aside class="content-right lg:col-span-1" aria-labelledby="address-heading">
         <section class="section">
-          <h2 id="address-heading">Address</h2>
-          <div class="card">
-            <address class="address-info">
-              <strong>Vivrtih Journal of Food Science and Clinical Nutrition</strong><br>
-              #23 Siddapura Garden,<br>
-              Jayanagar 1st Block, Bengaluru 560011<br>
-              Karnataka, India
-            </address>
+          <h2 id="address-heading" class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Address</h2>
+          <div class="card bg-white p-6 rounded-xl shadow-lg border border-gray-100 lg:sticky lg:top-24">
+            <div class="flex items-start space-x-3">
+              <i class="fas fa-map-marker-alt text-xl text-indigo-600 flex-shrink-0 mt-1" aria-hidden="true"></i>
+              <address class="address-info not-italic text-gray-700 space-y-2">
+                <strong class="text-lg font-semibold text-gray-900 block">Vivrtih Journal of Food Science and Clinical Nutrition</strong>
+                <p>#23 Siddapura Garden,</p>
+                <p>Jayanagar 1st Block, Bengaluru 560011</p>
+                <p>Karnataka, India</p>
+              </address>
+            </div>
           </div>
         </section>
       </aside>
@@ -224,37 +180,6 @@
   </div> <!-- /.container -->
 </main>
 
-<!-- Example structured data (optional) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organisation",
-  "name": "Vivrtih Journal of Food Science and Clinical Nutrition",
-  "url": "https://vivrtihjournal.com",
-  "contactPoint": [
-    { "@type": "ContactPoint", "email": "submission@vivrtihjournal.com", "contactType": "submissions" },
-    { "@type": "ContactPoint", "email": "queries@vivrtihjournal.com", "contactType": "general" },
-    { "@type": "ContactPoint", "email": "contact@vivrtihjournal.com", "contactType": "support" },
-    { "@type": "ContactPoint", "email": "managingeditor@vivrtihjournal.com", "contactType": "managing editor" }
-  ]
-}
-</script>
-
-                <!--
-                <aside class="sidebar">
-                  <div class="sidebar-section">
-                    <h3>For Urgent Matters</h3>
-                    <div class="urgent-contact">
-                      <p>If you have an urgent editorial matter or time-sensitive submission question, please contact:</p>
-                      <p><strong>Managing Editors</strong><br>
-                      <a href="mailto:editors@Vivrtihjournal.com">editors@Vivrtihjournal.com</a></p>
-                    </div>
-                  </div>
-                </aside>
-                  -->
-            </div>
-        </div>
-    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -282,6 +207,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
