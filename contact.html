@@ -177,35 +177,65 @@
         </section>
         -->
 
-        <!-- Response Times section -->
-            <section class="section response-section mb-10" aria-labelledby="response-times-heading">
-              <h2 id="response-times-heading" class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">Response Times</h2>
+       <section class="section response-section mb-10" aria-labelledby="response-times-heading">
+  <h2 id="response-times-heading" class="text-3xl font-bold text-gray-800 mb-6 border-b pb-2">
+    Response Times
+  </h2>
 
-              <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-                <dl class="response-times grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
-                  <div class="response-item border-l-4 border-indigo-400 pl-4">
-                    <dt class="text-lg font-semibold text-gray-900">General Inquiries</dt>
-                    <dd class="text-gray-600">48 hours during business days</dd>
-                  </div>
-                  <div class="response-item border-l-4 border-teal-400 pl-4">
-                    <dt class="text-lg font-semibold text-gray-900">Submission Questions</dt>
-                    <dd class="text-gray-600">24–48 hours</dd>
-                  </div>
-                  <div class="response-item border-l-4 border-amber-400 pl-4">
-                    <dt class="text-lg font-semibold text-gray-900">Technical Support</dt>
-                    <dd class="text-gray-600">24 hours for urgent issues</dd>
-                  </div>
-                  <div class="response-item border-l-4 border-red-400 pl-4">
-                    <dt class="text-lg font-semibold text-gray-900">Editorial Matters</dt>
-                    <dd class="text-gray-600">72 hours</dd>
-                  </div>
-                </dl>
+  <div class="bg-white p-6 rounded-2xl shadow-lg border border-gray-100">
+    <!-- grid: 2 columns on sm+ (matches screenshot) -->
+    <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
 
-                <p class="mt-6 pt-4 border-t text-sm text-gray-500">
-                  <em>Note: Response times may be longer during holidays and academic breaks.</em>
-                </p>
-              </div>
-            </section>
+      <!-- item 1 -->
+      <div class="response-item flex items-start">
+        <!-- slender colored bar -->
+        <span class="w-1.5 h-12 rounded mr-4 mt-1 bg-indigo-400" aria-hidden="true"></span>
+
+        <!-- content -->
+        <div>
+          <dt class="text-2xl font-extrabold text-gray-900 leading-tight">General Inquiries</dt>
+          <dd class="text-lg text-gray-500 mt-2">48 hours during business days</dd>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="response-item flex items-start">
+        <span class="w-1.5 h-12 rounded mr-4 mt-1 bg-teal-400" aria-hidden="true"></span>
+        <div>
+          <dt class="text-2xl font-extrabold text-gray-900 leading-tight">Submission Questions</dt>
+          <dd class="text-lg text-gray-500 mt-2">24–48 hours</dd>
+        </div>
+      </div>
+
+      <!-- item 3 -->
+      <div class="response-item flex items-start">
+        <span class="w-1.5 h-12 rounded mr-4 mt-1 bg-amber-400" aria-hidden="true"></span>
+        <div>
+          <dt class="text-2xl font-extrabold text-gray-900 leading-tight">Technical Support</dt>
+          <dd class="text-lg text-gray-500 mt-2">24 hours for urgent issues</dd>
+        </div>
+      </div>
+
+      <!-- item 4 -->
+      <div class="response-item flex items-start">
+        <span class="w-1.5 h-12 rounded mr-4 mt-1 bg-rose-400" aria-hidden="true"></span>
+        <div>
+          <dt class="text-2xl font-extrabold text-gray-900 leading-tight">Editorial Matters</dt>
+          <dd class="text-lg text-gray-500 mt-2">72 hours</dd>
+        </div>
+      </div>
+
+    </dl>
+
+    <!-- thin divider (matches screenshot) -->
+    <hr class="my-6 border-t border-gray-200">
+
+    <p class="text-sm italic text-gray-500">
+      Note: Response times may be longer during holidays and academic breaks.
+    </p>
+  </div>
+</section>
+
 
           </div> 
       <!-- Right column: address -->
@@ -270,6 +300,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
